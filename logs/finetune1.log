@@ -1,0 +1,12 @@
+[data] n=800 len min/max/mean=198/284/234.8 covered_by_block=800/800
+[pdz-1o] resume dari checkpoints/pdz-1o-final.npz
+[pdz-1o] tasks: ['chat', 'reasoning', 'tool_call', 'function_call', 'url_context', 'self_correct', 'novelty'] | params: 464064 | CPU numpy
+step 1/150 loss=0.0354
+step 25/150 loss=0.0629
+step 50/150 loss=0.0492
+step 75/150 loss=0.0381
+step 100/150 loss=0.0339
+step 125/150 loss=0.0268
+step 150/150 loss=0.0208
+[pdz-1o] selesai -> checkpoints/ft1/pdz-1o-final.npz
+ft_exit=0 DONE

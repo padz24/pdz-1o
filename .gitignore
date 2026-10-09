@@ -1,0 +1,5 @@
+# training aktif / artefak sekali-pakai
+checkpoints/v4/
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,7 @@
+[data] n=8000 len min/max/mean=43/59/51.2 covered_by_block=8000/8000
+[pdz-1o] tasks: ['url_context', 'self_correct', 'function_call', 'tool_call', 'chat', 'reasoning', 'novelty'] | params: 2135360 | CPU numpy
+step 1/60 loss=7.6825
+step 25/60 loss=2.5940
+step 50/60 loss=1.9879
+[pdz-1o] selesai -> checkpoints/v2pilot/pdz-1o-final.npz
+exit=0 DONE

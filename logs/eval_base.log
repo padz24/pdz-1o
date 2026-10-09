@@ -1,0 +1,34 @@
+[eval] checkpoints/pdz-1o-final.npz | block=320 params=464064
+  [reasoning] Q='berapa 7+5? bernalar langkah demi langkah.'
+    -> '<|im_start|>assistant\n<think>Hitung 2*5: hasilnya 12. Tulis angka akhir 12.</think>\nHasilnya 12.<|im_end|>'
+    think=True math=BENAR
+  [reasoning] Q='berapa 20-8? bernalar langkah demi langkah.'
+    -> '<|im_start|>assistant\n<think>Hitung 5+10: hasilnya 55. Tulis angka akhir 24.</think>\nHasilnya 24.<|im_end|>'
+    think=True math=SALAH(got=24,exp=12)
+  [reasoning] Q='berapa 6*7? bernalar langkah demi langkah.'
+    -> '<|im_start|>assistant\n<think>Hitung 2*5: hasilnya 5. Tulis angka aka hikhi.</think>\nHasilnya 52.<|im_end|>'
+    think=True math=SALAH(got=52,exp=42)
+  [tool_call] Q='hitung 8*7 pakai tool'
+    -> '<|im_start|>assistant\n<think>Perlu komputasi tepat -> panggil tool hitung.</think>\n<tool_call>{"name": "hitung", "arguments": {"ekspresi": "5+5"}}</tool_call><|im_end|>'
+    think=True
+  [tool_call] Q='hitung 9+6 pakai tool'
+    -> '<|im_start|>assistant\n<think>Perlu komputasi tepat -> panggil tool hitung.</think>\n<tool_call>{"name": "hitung", "arguments": {"ekspresi": "5+5"}}</tool_call><|im_end|>'
+    think=True
+  [chat] Q='halo siapa kamu?'
+    -> 'Per sun:/12,..<|im_end|>'
+    think=False
+  [chat] Q='apa itu tool_call?'
+    -> '<|im_start|>assistant\n<think>Pengguna bertanya umum. Jawab ringkas sebagai PDZ-1O.</think>\nTool_call memanggil fungsi Python lewat JSON: <tool_call>{"name": "hitung", "arguments": {"ekspresi": "'
+    think=True
+  [self_correct] Q='2+2*2=? (jawaban awal salah: 8)'
+    -> '<|im_start|>assistant\n<think>Kesalahan: mengabaikan prioritas kali. Koreksi: 2*2=4, +2=6.</think>\nKoreksi: jawaban benar 6, bukan 8. Saya belajar dari kesalahan prioritas operator.<|im_end|>'
+    think=True math=BENAR
+  [self_correct] Q='10-3*2=? (jawaban awal salah: 14)'
+    -> '<|im_start|>assistant\n<think>Kesalahan: kurang dulu sebelum kali. Koreksi: 3*2=6, 10-6=4.</think>\nKoreksi: jawaban benar 4, bukan 14.<|im_end|>'
+    think=True math=BENAR
+  [novelty] Q='temukan pola baru dari 2,4,8,...'
+    -> '<|im_start|>assistant\n<think>Rasio/selisih konsisten. Hal baru: prediksi 10 lalu uji.</think>\nPola baru ditemukan. Prediksi berikutnya 10.<|im_end|>'
+    think=True math=SALAH(got=10,exp=16)
+
+[hasil] think_fmt=9/10 chatml_isi=9/10 tool_valid=2/2 math_acc=3/6
+eval_exit=0 DONE

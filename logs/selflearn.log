@@ -1,0 +1,10 @@
+[self-learn] ronde 1/2
+  koreksi terkumpul: 7, novelty: 3
+  fine-tune koreksi selesai.
+[self-learn] ronde 2/2
+  koreksi terkumpul: 12, novelty: 8
+  fine-tune koreksi selesai.
+[self-learn] selesai. koreksi=12 novelty=8
+  dataset membesar oleh model sendiri -> data/self_corrections.jsonl + novel.jsonl
+SELFLEARN_DONE corrections= 12 novelties= 8
+sl_exit=0 DONE

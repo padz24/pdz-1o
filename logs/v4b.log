@@ -1,0 +1,12 @@
+[data] n=16016 len min/max/mean=43/127/51.3 covered_by_block=16016/16016
+[pdz-1o] resume dari checkpoints/v4/pdz-1o-final.npz
+[pdz-1o] tasks: ['self_correct', 'tool_call', 'function_call', 'chat', 'url_context', 'reasoning', 'novelty'] | params: 5663392 | CPU numpy
+step 1/3000 loss=0.2878
+step 25/3000 loss=0.1327
+step 50/3000 loss=0.1148
+step 75/3000 loss=0.2478
+step 100/3000 loss=0.1066
+step 125/3000 loss=0.1396
+step 150/3000 loss=0.1663
+step 175/3000 loss=0.1320
+step 200/3000 loss=0.1554

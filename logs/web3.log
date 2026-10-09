@@ -1,0 +1,10 @@
+[data] n=243 len min/max/mean=43/740/98.6 covered_by_block=184/243
+[pdz-1o] resume dari checkpoints/web2/pdz-1o-final.npz
+[pdz-1o] tasks: ['tool_call', 'self_correct', 'chat', 'url_context', 'function_call', 'novelty', 'reasoning'] | params: 2135360 | CPU numpy
+step 1/120 loss=1.0023
+step 25/120 loss=1.0041
+step 50/120 loss=0.9077
+step 75/120 loss=0.7685
+step 100/120 loss=0.0789
+[pdz-1o] selesai -> checkpoints/web3/pdz-1o-final.npz
+exit=0 DONE

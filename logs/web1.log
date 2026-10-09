@@ -1,0 +1,7 @@
+[data] n=299 len min/max/mean=43/740/85.7 covered_by_block=248/299
+[pdz-1o] resume dari checkpoints/champion_bpe.npz
+[pdz-1o] tasks: ['tool_call', 'chat', 'reasoning', 'function_call', 'self_correct', 'url_context', 'novelty'] | params: 2135360 | CPU numpy
+step 1/40 loss=3.8419
+step 25/40 loss=0.8302
+[pdz-1o] selesai -> checkpoints/web1/pdz-1o-final.npz
+exit=0 DONE

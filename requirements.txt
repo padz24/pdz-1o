@@ -1,0 +1,3 @@
+numpy>=1.24
+# Tanpa torch / transformers / pretrained — murni numpy CPU.
+# Opsional untuk URL/fetch sudah via stdlib (urllib).

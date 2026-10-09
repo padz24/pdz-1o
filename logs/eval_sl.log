@@ -1,0 +1,34 @@
+[eval] checkpoints/sl/pdz-1o-selflearn.npz | block=320 params=464064
+  [reasoning] Q='berapa 7+5? bernalar langkah demi langkah.'
+    -> '<|im_start|>angahawangkgkitang 2+2+2+2+2. 2+2+22. angkangkangkalahikilasirala ala 2+2+2+2+2. 2.cakikangkahik:\nSakangkakah: angangahangkikkakar tah akakangkekangkar\n<|im_start|>angkal'
+    think=False math=SALAH(got=2,exp=12)
+  [reasoning] Q='berapa 20-8? bernalar langkah demi langkah.'
+    -> '<|im_start|>angkangkangki. angkahangkohawangkaberi: kangkangakakirangksira a ala ":_cabang 2+2+2+2+2.<|im_end|>'
+    think=False math=SALAH(got=2,exp=12)
+  [reasoning] Q='berapa 6*7? bernalar langkah demi langkah.'
+    -> '<|im_start|>angahawangkgkitang 2+2+2+27 h 2+2+22. angkangkangkalahikilasirala ala 2+2+2+2+2. 2.cakir\n2+2+2+2.<|im_end|>'
+    think=False math=SALAH(got=2,exp=42)
+  [tool_call] Q='hitung 8*7 pakai tool'
+    -> '<|im_start|>ahang bengkantant\n<|im_start|>antah uikan tulan: kantawan pah "ankakan "nan akingkakikah 2.</think>\nSalanaka 2+2+"anangksitanta "2", 2.<|im_end|>'
+    think=False
+  [tool_call] Q='hitung 9+6 pakai tool'
+    -> '<|im_start|>ahang bengkantant\n<|im_start|>antah uikan tulan: kantancakohakantu: Pohikan angkakakikangaka Pontingksi toohan si.<|im_end|>'
+    think=False
+  [chat] Q='halo siapa kamu?'
+    -> '<think>Sangan langantun anan angantantawangkawangkangkangkserawa jawa.</think>\n<|im_start|>akangan akangkawawawan si ": {"jawakan si": angkankakawantoor\n<think>Korang.<|im_end|>'
+    think=True
+  [chat] Q='apa itu tool_call?'
+    -> '<|im_start|>angalang bentabenangkawantanaidangkawawabangkawangan berikah da labekan dulangabebangulangkawawangakang lawa tidu abeber. kakangikaka langki ucangin danaridasi'
+    think=False
+  [self_correct] Q='2+2*2=? (jawaban awal salah: 8)'
+    -> '<|im_start|>awawant\n<|im_start|>awamantawan pawawan antangahalawalawakangawan angkakakan.</think>\n<think> an asi akakanabejantawangangkantaangk: aka an aaka Kahawarilan, dangahen angakaakikantan '
+    think=True math=SALAH(got=None,exp=6)
+  [self_correct] Q='10-3*2=? (jawaban awal salah: 14)'
+    -> '<think>Kerantangung ukangangangkangu awaksebebangkawadangkawangkalakakaberikangangkangkantababant Pakabangubekoh anakanyalaka lanalanti kawabe.<|im_end|>'
+    think=False math=SALAH(got=None,exp=4)
+  [novelty] Q='temukan pola baru dari 2,4,8,...'
+    -> '<|im_start|>antant\n<|im_start|>antanahantant urangkantangkahikakantakakarian angka langujawan Pohanakakakakakantawahahikangkaangk tati angkaki lahararti laniktikarikangaktakikarah\n<|im_start|>a'
+    think=False math=SALAH(got=None,exp=16)
+
+[hasil] think_fmt=2/10 chatml_isi=9/10 tool_valid=0/2 math_acc=0/6
+eval_exit=0 DONE

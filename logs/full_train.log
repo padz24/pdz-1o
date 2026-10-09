@@ -1,0 +1,49 @@
+[data] n=800 len min/max/mean=198/284/234.0 covered_by_block=800/800
+[pdz-1o] tasks: ['chat', 'reasoning', 'tool_call', 'function_call', 'url_context', 'self_correct', 'novelty'] | params: 464064 | CPU numpy
+step 1/1000 loss=6.2307
+step 25/1000 loss=2.6318
+step 50/1000 loss=2.3987
+step 75/1000 loss=1.9339
+step 100/1000 loss=1.6108
+step 125/1000 loss=1.0251
+step 150/1000 loss=0.8722
+step 175/1000 loss=0.7425
+step 200/1000 loss=0.4910
+step 225/1000 loss=0.4236
+step 250/1000 loss=0.3935
+  saved checkpoints/pdz-1o-step250.npz
+step 275/1000 loss=0.4237
+step 300/1000 loss=0.2895
+step 325/1000 loss=0.2086
+step 350/1000 loss=0.1960
+step 375/1000 loss=0.1072
+step 400/1000 loss=0.1093
+step 425/1000 loss=0.1154
+step 450/1000 loss=0.0829
+step 475/1000 loss=0.0731
+step 500/1000 loss=0.1091
+  saved checkpoints/pdz-1o-step500.npz
+step 525/1000 loss=0.0691
+step 550/1000 loss=0.0503
+step 575/1000 loss=0.0540
+step 600/1000 loss=0.1107
+step 625/1000 loss=0.0394
+step 650/1000 loss=0.3718
+step 675/1000 loss=0.0954
+step 700/1000 loss=0.0457
+step 725/1000 loss=0.0310
+step 750/1000 loss=0.0453
+  saved checkpoints/pdz-1o-step750.npz
+step 775/1000 loss=0.0366
+step 800/1000 loss=0.0242
+step 825/1000 loss=0.0204
+step 850/1000 loss=0.0245
+step 875/1000 loss=0.0262
+step 900/1000 loss=0.0267
+step 925/1000 loss=0.0421
+step 950/1000 loss=0.0269
+step 975/1000 loss=0.0241
+step 1000/1000 loss=0.0295
+  saved checkpoints/pdz-1o-step1000.npz
+[pdz-1o] selesai -> checkpoints/pdz-1o-final.npz
+train_exit=0 DONE
